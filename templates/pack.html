@@ -1,0 +1,14 @@
+<html>
+	<head>
+		  <link rel="stylesheet" href="/static/css/draft.css">
+	</head>
+	<body>
+		<h1>pack</h1>
+		{% for card in foil_cards %}
+		<img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }} (foil)" alt="{{ card["name"] }} (foil)" class="foil">
+		{% endfor %}
+		{% for card in cards %}
+		<img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }}" alt="{{ card["name"] }}">
+		{% endfor %}
+	</body>
+</html>

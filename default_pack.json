@@ -1,0 +1,81 @@
+{
+    "pack_contents": {
+        "rare": [
+            {
+                "params": {
+                    "rarity": "rare"
+                },
+                "weight": 7
+            },
+            {
+                "params": {
+                    "rarity": "mythic"
+                }
+            }
+        ],
+        "uncommons": [
+            {
+                "count": 3,
+                "params": {
+                    "rarity": "uncommon"
+                }
+            }
+        ],
+        "commons": [
+            {
+                "count": 9,
+                "not_contains_params": {
+                    "type_line": "Basic Land"
+                },
+                "params": {
+                    "rarity": "common"
+                }
+            }
+        ],
+        "foil": [
+            {
+                "not_contains_params": {
+                    "type_line": "Basic Land"
+                },
+                "params": {
+                    "rarity": "common"
+                },
+                "weight": 784
+            },
+            {
+                "params": {
+                    "rarity": "rare"
+                },
+                "weight": 7,
+                "foil": true
+            },
+            {
+                "params": {
+                    "rarity": "mythic"
+                },
+                "foil": true
+            },
+            {
+                "params": {
+                    "rarity": "common"
+                },
+                "weight": 80,
+                "foil": true
+            },
+            {
+                "params": {
+                    "rarity": "uncommon"
+                },
+                "weight": 24,
+                "foil": true
+            }
+        ],
+        "land": [
+            {
+                "contains_params": {
+                    "type_line": "Basic Land"
+                }
+            }
+        ]
+    }
+}

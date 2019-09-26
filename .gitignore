@@ -1,0 +1,4 @@
+/venv
+/scryfall-default-cards.json
+*.pyc
+*.bak

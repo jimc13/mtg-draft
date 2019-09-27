@@ -1,1 +1,9 @@
+Add template to view current picks
+
+Use sessions to track each user's picks separately and remove use of working_pack[1]
+
+Store data in a better way than open_packs
+
 Improve css for foil so it looks flashy
+
+Add edge cases, reference https://github.com/dr4fters/dr4ft/blob/master/src/pool.js

@@ -3,12 +3,17 @@
 		  <link rel="stylesheet" href="/static/css/draft.css">
 	</head>
 	<body>
-		<h1>pack</h1>
-		{% for card in foil_cards %}
-		<img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }} (foil)" alt="{{ card["name"] }} (foil)" class="foil">
+		<form action="/{{set_id}}/pick/{{pick_number + 1}}" method="post">
+		<h1>Pack 1 Pick {{pick_number}}</h1>
+		{% for card_number, card in pack.items() %}
+		{% if card.get("is_foil") %}
+		<button name="pick" value="{{ card_number }}" type="submit"><img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }} (foil)" alt="{{ card["name"] }} (foil)" class="foil">
+		{% endif %}
 		{% endfor %}
-		{% for card in cards %}
-		<img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }}" alt="{{ card["name"] }}">
+		{% for card_number, card in pack.items() %}
+		{% if not card.get("is_foil") %}
+		<button name="pick" value="{{ card_number }}" type="submit"><img src="{{ card["image_uris"]["small"] }}" title="{{ card["name"] }}" alt="{{ card["name"] }}">
+		{% endif %}
 		{% endfor %}
 	</body>
 </html>

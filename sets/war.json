@@ -3,21 +3,57 @@
         "rare": [
             {
                 "params": {
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "lang": "en"
                 },
                 "weight": 7
             },
             {
                 "params": {
-                    "rarity": "mythic"
+                    "rarity": "mythic",
+                    "lang": "en"
+                }
+            }
+        ],
+        "uncommon_non_walker": [
+            {
+                "params": {
+                    "rarity": "uncommon"
+                },
+                "not_contains_params": {
+                    "type_line": "Legendary Planeswalker"
+                },
+                "skip_if": {
+                    "not_contains_params": {
+                        "type_line": "Legendary Planeswalker"
+                    }
+                }
+            }
+        ],
+        "uncommon_walker": [
+            {
+                "params": {
+                    "rarity": "uncommon",
+                    "lang": "en"
+                },
+                "contains_params": {
+                    "type_line": "Legendary Planeswalker"
+                },
+                "skip_if": {
+                    "contains_params": {
+                        "type_line": "Legendary Planeswalker"
+                    }
                 }
             }
         ],
         "uncommons": [
             {
-                "count": 3,
+                "count": 2,
                 "params": {
                     "rarity": "uncommon"
+                },
+                "not_contains_params": {
+                    "type_line": "Legendary Planeswalker"
                 }
             }
         ],
@@ -51,21 +87,24 @@
             },
             {
                 "params": {
-                    "rarity": "uncommon"
+                    "rarity": "uncommon",
+                    "lang": "en"
                 },
                 "weight": 24,
                 "foil": true
             },
             {
                 "params": {
-                    "rarity": "rare"
+                    "rarity": "rare",
+                    "lang": "en"
                 },
                 "weight": 7,
                 "foil": true
             },
             {
                 "params": {
-                    "rarity": "mythic"
+                    "rarity": "mythic",
+                    "lang": "en"
                 },
                 "foil": true
             }
